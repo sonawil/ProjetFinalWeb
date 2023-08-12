@@ -1,0 +1,180 @@
+
+/* Style général de la page */
+body {
+ right: 70%;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin-left: Z;
+  margin: 120px; 
+  padding: 120px; 
+  flex-direction: column; /* Alignez les éléments verticalement */
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Utilisez la hauteur de la fenêtre comme unité de mesure */
+  /*background-image: url(../img/Background.jpeg);*/
+}
+
+  /* Style de la grille */
+  table {
+    border: #0f2b03 solid 2px;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  /* Style des cellules */
+td {
+    width: 60px;
+    height: 25px; /* Ajustez la hauteur comme nécessaire */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    font-size: 0; /* Pour éviter l'espacement en bas */
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  
+/* Style des cellules contenant les images */
+td img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0; /* Désactiver la marge par défaut */
+    padding: 0; /* Désactiver le rembourrage par défaut */
+    display: block; /* Ajouter cette ligne pour résoudre l'espacement */
+}
+  
+
+  /* Styles pour les cellules contenant des monstres */
+td.s {
+    position: relative; /* Ajoute une position relative pour positionner l'image */
+  }
+  
+  /* Styles pour les images de monstres */
+  td.monstre img {
+    width: 100%; /* La largeur de l'image est de 100% de la cellule */
+    height: 100%; /* La hauteur de l'image est de 100% de la cellule */
+    object-fit: fill; /* Ajuste l'image pour couvrir la cellule */
+  }
+  /* Style pour la cellule du joueur */
+/* Style pour la cellule du joueur */
+td.j {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0;
+    background-color: transparent; /* Ne pas définir de couleur de fond */
+    padding: 0; /* Supprimer le rembourrage pour que l'image occupe toute la cellule */
+   
+  }
+  
+/* Style pour les images dans la cellule du joueur */
+td.j img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  
+  /* Style du conteneur des boutons */
+#Buttons {
+    margin-left:2%;
+    position: absolute;
+    left: 20px; /* Ajustez la valeur pour définir la distance par rapport à la gauche */
+    top: 82%; /* Centrez verticalement les boutons */
+    transform: translateY(-50%); /* Centrez verticalement les boutons */
+  }
+  
+  /* Style des boutons de déplacement */
+  button {
+    width: 100%; /*les boutons ont la meme largeur*/
+    height: 100%;/*les boutons ont la meme hauteur*/
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #041f3d;
+    color: rgb(253, 253, 253);
+    border:#192e97 solid 4px;
+    border-radius: 5px;
+    cursor:grab;
+   
+  }
+  /* Changer la couleur de fond lors du survol */
+button:hover {
+    background-color: #616daa;
+  }
+  
+  /* Changer la couleur de fond lors du clic */
+  button:active {
+    background-color: #4379b6;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px; /* Ajoutez une marge pour espacer les groupes de boutons */
+  }
+  
+  #boutonHaut {
+    margin-bottom: 5px; /* Espacement vers le bas */
+  }
+  
+  #boutonBas {
+    margin-top: 5px; /* Espacement vers le haut */
+  }
+  
+  #boutonGauche {
+    margin-right: 5px; /* Espacement vers la droite */
+  }
+  
+  #boutonDroite {
+    margin-left: 5px; /* Espacement vers la gauche */
+  }
+  button:disabled {
+    background-color: #72c1e2;
+    cursor: not-allowed;
+  }
+  
+  /* Style du message d'alerte */
+  .alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    padding: 50px 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    z-index: 9999;
+  }
+  
+  /* Style du score */
+  #score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Style du bouton de réinitialisation */
+  #boutonReinitialiser {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #041f3d;
+    color: #fff;
+    border: #192e97 solid 4px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style du score */
+  #score {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  
